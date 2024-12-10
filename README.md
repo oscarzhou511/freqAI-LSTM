@@ -20,17 +20,17 @@ This project aims to develop a trading model that utilizes a dynamic weighting a
 1. Clone the repository
 
 ```shell
-git clone https://github.com/Netanelshoshan/freqAI-LSTM.git
+git clone https://github.com/oscarzhou511/freqAI-LSTM.git
 ```
 2. Copy the files to the freqtrade directory
 
 ```shell 
-cp torch/BasePyTorchModel.py <freqtrade dir>/freqtrade/freqai/base_models/
-cp torch/PyTorchLSTMModel.py <freqtrade dir >/freqtrade/freqai/torch/
-cp torch/PyTorchModelTrainer.py <freqtrade dir>/freqtrade/freqai/torch/
-cp torch/PyTorchLSTMRegressor.py <freqtrade dir>/user_data/freqaimodels/
-cp config-example.json <freqtrade dir>/user_data/config.json
-cp ExampleLSTMStrategy.py <freqtrade dir>/user_data/strategies/
+cp torch/BasePyTorchModel.py /root/freqtrade/freqtrade/freqai/base_models/
+cp torch/PyTorchLSTMModel.py /root/freqtrade/freqtrade/freqai/torch/
+cp torch/PyTorchModelTrainer.py /root/freqtrade/freqtrade/freqai/torch/
+cp torch/PyTorchLSTMRegressor.py /root/freqtrade/user_data/freqaimodels/
+cp config-example.json /root/freqtrade/user_data/config-example.json
+cp ExampleLSTMStrategy.py /root/freqtrade/user_data/strategies/
 ```
 3. Download the data
 ```shell

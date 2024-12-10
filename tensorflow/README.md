@@ -29,13 +29,13 @@ def _validate_freqai_include_timeframes()
 ```
 4. Download json data
 ```
-freqtrade download-data --exchange binance --days 450 -t 4h -p ETH/USDT:USDT ETC/USDT:USDT SOL/USDT:USDT OCEAN/USDT:USDT  BTC/USDT:USDT  --data-format-ohlcv json --erase --trading-mode futures
+freqtrade download-data --exchange mexc --days 450 -t 4h -p ETH/USDT ETC/USDT SOL/USDT OCEAN/USDT:USDT  BTC/USDT  --data-format-ohlcv json --erase --trading-mode spot
 
-freqtrade download-data --exchange binance --days 450 -t 1h -p ETH/USDT:USDT ETC/USDT:USDT SOL/USDT:USDT OCEAN/USDT:USDT  BTC/USDT:USDT  --data-format-ohlcv json --erase --trading-mode futures
+freqtrade download-data --exchange mexc --days 450 -t 1h -p ETH/USDT ETC/USDT SOL/USDT OCEAN/USDT  BTC/USDT  --data-format-ohlcv json --erase --trading-mode spot
 ```
 5. Run it.
 ```shell
-freqtrade backtesting  -c config-example.json --breakdown day week month --timerange 20240301-20240401```
+freqtrade backtesting  -c config-example.json --breakdown day week month --timerange 20240901-20241201```
 ```
 ## Configuration
 
